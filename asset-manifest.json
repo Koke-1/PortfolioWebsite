@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/PortfolioWebsite/static/css/main.158186bb.css",
-    "main.js": "/PortfolioWebsite/static/js/main.035ddcf4.js",
-    "static/media/ANIMATIONGIF.gif": "/PortfolioWebsite/static/media/ANIMATIONGIF.60aa929764a1adae02e7.gif",
+    "main.css": "/PortfolioWebsite/static/css/main.c8d00b2f.css",
+    "main.js": "/PortfolioWebsite/static/js/main.9b9ce83c.js",
+    "static/media/ANIMATIONGIF.gif": "/PortfolioWebsite/static/media/ANIMATIONGIF.6cc865cfb911c87a7f69.gif",
     "static/media/soccer1.png": "/PortfolioWebsite/static/media/soccer1.6935875c217c9cab9488.png",
     "static/media/soccer.jpg": "/PortfolioWebsite/static/media/soccer.025a4873b77609417cdc.jpg",
     "static/media/Coin.jpg": "/PortfolioWebsite/static/media/Coin.e4324d4f1b47d4226938.jpg",
     "static/media/SoccerBall.jpg": "/PortfolioWebsite/static/media/SoccerBall.97b408394e4ff03c6ec4.jpg",
     "index.html": "/PortfolioWebsite/index.html",
-    "main.158186bb.css.map": "/PortfolioWebsite/static/css/main.158186bb.css.map",
-    "main.035ddcf4.js.map": "/PortfolioWebsite/static/js/main.035ddcf4.js.map"
+    "main.c8d00b2f.css.map": "/PortfolioWebsite/static/css/main.c8d00b2f.css.map",
+    "main.9b9ce83c.js.map": "/PortfolioWebsite/static/js/main.9b9ce83c.js.map"
   },
   "entrypoints": [
-    "static/css/main.158186bb.css",
-    "static/js/main.035ddcf4.js"
+    "static/css/main.c8d00b2f.css",
+    "static/js/main.9b9ce83c.js"
   ]
 }
