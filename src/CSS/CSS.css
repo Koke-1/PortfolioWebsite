@@ -31,8 +31,7 @@ body #root .Canvas .Home .TitleBar {
   position: absolute;
   height: 66%;
   width: 10%;
-  left: 10px;
-  background-color: transparent;
+  background-color: rgba(216, 95, 9, 0.747);
 }
 @media (max-width: 1000px) {
   body #root .Canvas .Home .TitleBar {
@@ -40,24 +39,23 @@ body #root .Canvas .Home .TitleBar {
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: center;
-    width: 98%;
+    width: 100%;
     height: 8.5%;
   }
 }
-body #root .Canvas .Home .TitleBar:before {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(216, 95, 9, 0.747);
-  z-index: 2;
-  border: 1.25px solid black;
-}
 body #root .Canvas .Home .TitleBar .Name {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
   position: relative;
   text-align: center;
   height: 20%;
   z-index: 3;
+}
+body #root .Canvas .Home .TitleBar .Name h1 {
+  align-self: center;
+  font-size: 1.5em;
 }
 @media (max-width: 1000px) {
   body #root .Canvas .Home .TitleBar .Name {
@@ -69,7 +67,7 @@ body #root .Canvas .Home .TitleBar .Name {
     width: 20%;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   body #root .Canvas .Home .TitleBar .Name {
     font-size: 9px;
   }
@@ -199,11 +197,11 @@ body #root .Canvas .Home .TitleBar .Buttons .Contact .CButtons button:hover {
 }
 @media (max-width: 1000px) {
   body #root .Canvas .Home .TitleBar .Buttons .Contact .CButtons button img {
-    height: 33px;
-    width: 33px;
+    height: 100%;
+    width: 45%;
   }
 }
-body #root .Canvas .AboutP {
+body #root .AboutP {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -214,76 +212,83 @@ body #root .Canvas .AboutP {
   color: white;
 }
 @media (max-width: 1000px) {
-  body #root .Canvas .AboutP {
+  body #root .AboutP {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: flex-start;
   }
 }
-body #root .Canvas .AboutP .Image00 {
+body #root .AboutP .Image00 {
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
   align-items: center;
-  height: 75%;
-  width: 20%;
+  height: 80%;
+  width: 25%;
 }
-body #root .Canvas .AboutP .ATextH {
+body #root .AboutP .Image00 img {
+  width: 100%;
+  height: auto;
+}
+body #root .AboutP .ATextH {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
   height: 80%;
-  width: 60%;
+  width: 50%;
   z-index: 1;
 }
-body #root .Canvas .AboutP .ATextH .AText {
+body #root .AboutP .ATextH .AText {
   display: flex;
   flex-flow: column nowrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   height: 100%;
-  width: 50%;
+  width: 95%;
+}
+body #root .AboutP .ATextH .AText h1 {
+  text-align: center;
+  font-size: 3.5em;
 }
 @media (max-width: 1000px) {
-  body #root .Canvas .AboutP .ATextH .AText {
-    width: 82.5%;
+  body #root .AboutP .ATextH .AText h1 {
+    font-size: 2.5em;
   }
 }
-body #root .Canvas .AboutP .ATextH .AText h1 {
+@media (max-width: 800px) {
+  body #root .AboutP .ATextH .AText h1 {
+    font-size: 2em;
+  }
+}
+body #root .AboutP .ATextH .AText p {
   text-align: center;
-  font-size: 50px;
+  font-size: 1.5em;
 }
-@media (max-width: 1000px) {
-  body #root .Canvas .AboutP .ATextH .AText h1 {
-    width: 82.5%;
-    font-size: 75px;
+@media (max-width: 1200px) {
+  body #root .AboutP .ATextH .AText p {
+    font-size: 1.25em;
   }
 }
-@media (max-width: 500px) {
-  body #root .Canvas .AboutP .ATextH .AText h1 {
-    font-size: 33px;
-  }
-}
-body #root .Canvas .AboutP .ATextH .AText p {
-  text-align: center;
-  font-size: 25px;
-}
-@media (max-width: 500px) {
-  body #root .Canvas .AboutP .ATextH .AText p {
+@media (max-width: 900px) {
+  body #root .AboutP .ATextH .AText p {
     font-size: 13px;
   }
 }
-body #root .Canvas .AboutP .Image01 {
+body #root .AboutP .Image01 {
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-end;
   align-items: center;
-  height: 75%;
-  width: 20%;
+  height: 80%;
+  width: 25%;
 }
-body #root .Canvas .ProjectP {
+body #root .AboutP .Image01 img {
+  width: 100%;
+  height: auto;
+}
+body #root .ProjectP {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -294,22 +299,22 @@ body #root .Canvas .ProjectP {
   color: white;
 }
 @media (max-width: 1000px) {
-  body #root .Canvas .ProjectP {
+  body #root .ProjectP {
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: center;
   }
 }
-body #root .Canvas .ProjectP h1 {
+body #root .ProjectP h1 {
   font-size: 50px;
 }
 @media (max-width: 500px) {
-  body #root .Canvas .ProjectP h1 {
+  body #root .ProjectP h1 {
     font-size: 33px;
   }
 }
-body #root .Canvas .ProjectP .ProjectL {
+body #root .ProjectP .ProjectL {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-evenly;
@@ -317,37 +322,49 @@ body #root .Canvas .ProjectP .ProjectL {
   width: 100%;
   height: 60%;
 }
-body #root .Canvas .ProjectP .ProjectL .ProjectH {
+body #root .ProjectP .ProjectL .ProjectH {
   display: flex;
   flex-flow: column nowrap;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   height: 66%;
   width: 20%;
   background-color: rgb(29, 58, 19);
 }
-body #root .Canvas .ProjectP .ProjectL .ProjectH a {
+body #root .ProjectP .ProjectL .ProjectH a {
   color: inherit;
   text-decoration: none;
+  height: 100%;
+  width: 100%;
+}
+body #root .ProjectP .ProjectL .ProjectH a img {
+  height: 90%;
+  width: 100%;
+}
+@media (max-width: 600px) {
+  body #root .ProjectP .ProjectL .ProjectH a img {
+    width: 100%;
+  }
+}
+body #root .ProjectP .ProjectL .ProjectH a h2 {
+  text-align: center;
+  font-size: 1.5em;
+  height: 10%;
+  width: 100%;
+  word-wrap: break-word;
+}
+@media (max-height: 700px) {
+  body #root .ProjectP .ProjectL .ProjectH a h2 {
+    font-size: 1.15em;
+  }
 }
 @media (max-width: 1000px) {
-  body #root .Canvas .ProjectP .ProjectL .ProjectH {
+  body #root .ProjectP .ProjectL .ProjectH {
     width: 45%;
   }
 }
 @media (max-width: 500px) {
-  body #root .Canvas .ProjectP .ProjectL .ProjectH {
-    width: 48.75%;
+  body #root .ProjectP .ProjectL .ProjectH {
+    width: 60%;
   }
-}
-@media (max-width: 500px) {
-  body #root .Canvas .ProjectP .ProjectL .ProjectH img {
-    width: 100%;
-  }
-}
-body #root .Canvas .ProjectP .ProjectL .ProjectH:hover {
-  background-color: rgb(46, 92, 30);
-}
-body #root .Canvas .ProjectP .ProjectL .ProjectH h2 {
-  text-align: center;
 }/*# sourceMappingURL=CSS.css.map */

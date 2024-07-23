@@ -1,5 +1,5 @@
 import React from 'react'
-import Animation01 from './vid/Animation01.mp4';
+import Animation01 from './vid/ANIMATIONGIF.gif';
 import email from "./img/email.png"
 import github from "./img/github.png"
 import indeed from "./img/indeed.png"
@@ -32,7 +32,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <video className='Video01' autoPlay loop src={Animation01} > </video>
+      <img className='Video01' src={Animation01} /> 
     </div>
   )
 }
